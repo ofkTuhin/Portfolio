@@ -1,0 +1,9 @@
+.menuBar a{
+    color: rgb(255, 255, 255);
+}
+.menuBar li{
+    margin-right: 20px;
+}
+.main-menu{
+    background-color: #1289b8;
+}

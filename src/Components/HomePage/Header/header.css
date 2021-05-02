@@ -1,0 +1,26 @@
+.header{
+   background-color: rgb(28 28 87 / 31%);
+    background-size: cover;
+    height: 468px;
+    background-repeat: no-repeat;
+    text-align: left;
+    color: #ffff;
+    padding-top: 50px;
+}
+.header-img{
+    border: 1px solid chocolate;
+    width: 350px;
+}
+.header img{
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.header-content{
+    margin-top: 50px;
+}

@@ -1,0 +1,31 @@
+.about{
+   
+    margin:20px auto 0px;
+    
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+}
+.aboutSection h2{
+    color: #000;
+}
+.aboutImg img{
+    height: 100%;
+    width: 100%;
+
+}
+.about p{
+    font-size: 16px;
+}
+.aboutImg{
+    height: 200px;
+}
+/* .progressBar {
+    
+    
+    border-radius: 1rem;
+    transition: 1s ease;
+    transition-delay: 0.5s;
+  } */
