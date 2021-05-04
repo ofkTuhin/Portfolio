@@ -1,24 +1,31 @@
 .header{
-   background-color: rgb(28 28 87 / 31%);
+   background-color: rgb(32 39 57);
     background-size: cover;
-    height: 468px;
+   
     background-repeat: no-repeat;
     text-align: left;
-    color: #ffff;
-    padding-top: 50px;
+    color: #1289b8;
+    padding: 50px;
+    
 }
 .header-img{
-    border: 1px solid chocolate;
     width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    /* border: 2px solid rgb(214, 129, 16); */
 }
 .header img{
-    height: 300px;
-    width: 100%;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+   height: 100%;
+   width: 100%;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
 }
 
 .header-content{

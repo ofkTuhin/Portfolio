@@ -1,0 +1,14 @@
+.contactForm form{
+    width: 40%;
+    margin:0 auto;
+    text-align: left;
+    margin-top: 40px;
+    
+}
+.contactForm{
+    background-color: beige;
+    padding: 17px;
+}
+.contactForm h2{
+    padding-top: 20px;
+}

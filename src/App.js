@@ -14,6 +14,7 @@ import Resume from './Components/Resume/Resume';
 import Blog from './Components/Blog/Blog';
 import Navbar from './Components/Navbar/Navbar';
 import About from './Components/About/About';
+import Contact from './Components/Contact/Contact';
 
 
 
@@ -41,6 +42,10 @@ function App() {
           <Route path="/blog">
            <Blog></Blog>
           </Route>
+          <Route path="/contact">
+           <Contact></Contact>
+          </Route>
+
           <Route path="/">
            <Home></Home>
           </Route>

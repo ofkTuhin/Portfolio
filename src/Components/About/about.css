@@ -1,31 +1,43 @@
+.aboutSection{
+    background-color: #1b303830;
+  
+    
+    
+}
 .about{
    
-    margin:20px auto 0px;
+    margin: 10px 0px 10px;
     
     border-radius:10px ;
     -webkit-border-radius:10px ;
     -moz-border-radius:10px ;
     -ms-border-radius:10px ;
     -o-border-radius:10px ;
+    
 }
-.aboutSection h2{
-    color: #000;
+.about-content{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 40px
 }
+.about h2{
+   text-align: center;
+   color: #1289b8;
+}
+
 .aboutImg img{
     height: 100%;
     width: 100%;
-
 }
 .about p{
-    font-size: 16px;
+    font-size: 14px;
+    margin-bottom: 0;
 }
 .aboutImg{
     height: 200px;
+    width: 100%;
 }
-/* .progressBar {
-    
-    
-    border-radius: 1rem;
-    transition: 1s ease;
-    transition-delay: 0.5s;
-  } */
+.about p a{
+    font-size: 20px;
+    padding: 0 10px;
+} 

@@ -1,0 +1,48 @@
+.repository img{
+    height: 200px;
+    width: 100%;
+    
+}
+.projects h2{
+    text-align: left;
+    color:whitesmoke
+}
+.projects{
+    padding: 70px;
+}
+.projectSection{
+    background-color: rgb(18 3 56);
+   
+}
+.repository{
+    margin: 20px 0px;
+    position: relative;
+    height: 200px;
+}
+.overlay{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.63);
+    position: absolute;
+    height: 0;
+    width: 100%;
+    opacity: 0;
+    transition:all linear 0.4s;
+    -webkit-transition:all linear 0.4s;
+    -moz-transition:all linear 0.4s;
+    -ms-transition:all linear 0.4s;
+    -o-transition:all linear 0.4s;
+    color: white;
+}
+.repository:hover{
+    box-shadow: 10px 5px 5px rgb(18 3 56);
+}
+.overlay h6{
+    margin-top: 10px;
+}
+.repository:hover .overlay{
+    opacity: 1;
+    height: 100%;
+    top: 0;
+    box-shadow: 10px 5px 5px rgb(18 3 56);
+    
+}

@@ -7,7 +7,7 @@ const Navbar = () => {
         <div>
     <nav class="navbar navbar-expand-lg main-menu">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <Link to="/"><a style={{color:"white"}} class="navbar-brand" href="#">OMAR FARUK</a></Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,6 +25,8 @@ const Navbar = () => {
           <a class="nav-link " href="">About</a>
         </li>
      </Link>
+
+    
      
        <Link to='/project'>
        <li class="nav-item">
@@ -41,6 +43,11 @@ const Navbar = () => {
           <a class="nav-link " href="#">Resume</a>
         </li>
        </Link>
+       <Link to="/contact">
+     <li class="nav-item">
+          <a class="nav-link " href="">Contact</a>
+        </li>
+     </Link>
        
       </ul>
     </div>

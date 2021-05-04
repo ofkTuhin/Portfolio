@@ -1,8 +1,43 @@
 .skill{
     text-align: center;
     margin-top: 20px;
-    background-color: rgba(181, 168, 194, 0.712);
+   
+   
 }
 .skill h2{
 color: aqua;
+}
+.content{
+    border: 1px solid black;
+    margin: 20px 0px;
+}
+.content img{
+    height: 50px;
+    width: 50px;
+    margin: 10px 0px;
+}
+.headings{
+    text-align: left;
+    position: relative;
+    margin-bottom: 2px;
+}
+.headings h4{
+    margin-bottom: 2px;
+}
+.headings::after{
+    content: '';
+    height: 5px;
+    width: 30px;
+    position: absolute;
+    background-color: #1289b8;
+    left: 0;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+.headings:hover::after{
+    left: 50px;
+    opacity: 0;
 }

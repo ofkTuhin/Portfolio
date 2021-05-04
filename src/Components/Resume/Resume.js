@@ -1,22 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './resume.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAt, faChevronCircleRight, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faAt, faChevronCircleRight, faDownload, faPhone } from '@fortawesome/free-solid-svg-icons'
 import {  faGithub,  faLinkedin, } from '@fortawesome/free-brands-svg-icons';
+import Aos from "aos"
+import 'aos/dist/aos.css';
 
 
 const Resume = () => {
+   useEffect(()=>{
+       Aos.init({duration:2000})
+   },[])
     return (
         <div>
             <div className="container">
-                <div className="col-12">
+                <div className="col-12" data-aos="flip-up" >
                     <header >
-                        <p><h3>Here's My Resume</h3> <a href="https://drive.google.com/file/d/1Xfsnw4wmXy3kPilB02aJE58u_Sn_28It/view?usp=sharing" target="_blank"><button className="btn btn-danger">Download Resume</button></a></p>
+                        <p><h3>Here's My Resume</h3> <a style={{color:"green"}} href="https://drive.google.com/file/d/1Xfsnw4wmXy3kPilB02aJE58u_Sn_28It/view?usp=sharing" target="_blank"><FontAwesomeIcon icon={faDownload} />Download </a></p>
 
                     </header>
                 </div>
                 <div className="col-12">
-                    <div className="intro section shadow-lg p-3 mb-5 bg-body rounded">
+                    <div className="intro section shadow-lg p-3 mb-5 bg-body rounded" data-aos="fade-down-left">
                         <h5 className="heading">Introduction</h5>
                         <h3>MD. OMAR FARUK KHAN</h3>
                         <h6>Front-End Developer</h6>
@@ -29,7 +34,7 @@ const Resume = () => {
 
                     </div>
                 </div>
-                <div className="col-12">
+                <div className="col-12" data-aos="fade-down-right">
                     <div className="objective section shadow-lg p-3 mb-5 bg-body rounded">
                         <h5 className="heading">Objective</h5>
                         <p className="text-wrap">To work in a well organized and competitive environment related to web development, where my potentials can be exploited to the maximum extent. </p>
@@ -38,7 +43,7 @@ const Resume = () => {
 
                 {/* objective end */}
 
-                <div className="col-12">
+                <div data-aos="fade-down-left" className="col-12">
                     <div className="skills section shadow-lg p-3 mb-5 bg-body rounded">
                         <h5 className="heading">Skills</h5>
                         <h6>Expert:</h6>
@@ -56,9 +61,9 @@ const Resume = () => {
                 </div>
 
                 {/* skill end */}
-                <div className="col-12">
-                    <div className="project section shadow-lg p-3 mb-5 bg-body rounded">
-                        <h5 className="heading">Projects</h5>
+                <div className="col-12" data-aos="fade-down-up">
+                    <div className="project section shadow-lg p-3 mb-5 bg-body rounded" >
+                        <div data-aos="flip-up"><h5 className="heading">Projects</h5>
 
                         <h6>Project 1 : <span style={{ color: "blue" }}>Epl-Team-Info.</span></h6>
                         <h6>Features :</h6>
@@ -69,9 +74,11 @@ const Resume = () => {
                         <p><span style={{ color: "red" }}>Live link</span> : https://604a2d3950d9dc079fff9466--focused-nobel-ce5023.netlify.app/</p>
                         <br></br>
                         <br></br>
+                        </div>
 
 
 
+                        <div data-aos="flip-up">
                         <h6>Project 2 : <span style={{ color: "blue" }}>Easy-Ride..</span></h6>
                         <h6>Features :</h6>
                         <p> This is a riding app. By using this app one can choose a ride to go one place to another place.
@@ -82,11 +89,13 @@ const Resume = () => {
                         <p><FontAwesomeIcon icon={faGithub} /> https://github.com/omar-faruk02/Easy-Ride.</p>
                         <p><span style={{ color: "red" }}>Live link</span> : https://easy-ride-d7ce4.web.app/.app/</p>
 
+                        </div>
                         <br></br>
                         <br></br>
 
 
 
+                        < div data-aos="flip-up">
                         <h6>Project 3 : <span style={{ color: "blue" }}>Creative-Agency.</span></h6>
                         <h6>Features :</h6>
                         <p> This app is made for provided service by agency to the client. The agency               name is Creative Agency. A client can buy It base skill development course by this app such as Web Design, Graphics Design , Full Stack web Development course. In this App the client has a personal Dashboard by using this the client can purses course, review about the client experience with this agency and also see his order list.
@@ -101,8 +110,9 @@ const Resume = () => {
                         <p><span style={{ color: "red" }}>Live link</span> :https://creative-agency-a40e4.web.app/</p>
                     </div>
                 </div>
+                </div>
 
-                <div className="col-12">
+                <div className="col-12" data-aos="fade-down-left">
                     <div className="project section shadow-lg p-3 mb-5 bg-body rounded">
                         <h5 className="heading">Education</h5>
                         <h6>B.Sc. Engineer : </h6>
@@ -114,7 +124,7 @@ const Resume = () => {
                 </div>
 
 
-                <div className="col-12">
+                <div className="col-12" data-aos="fade-down-right">
                     <div className="project section shadow-lg p-3 mb-5 bg-body rounded">
                         <h5 className="heading">Computer Skills</h5>
                         <p><span style={{ fontWeight: "500" }}>Client	</span>:	Windows@(XP, Vista, 7, 8, 8.1,10)</p>
@@ -125,7 +135,7 @@ const Resume = () => {
                     </div>
                 </div>
 
-                <div className="col-12">
+                <div className="col-12" data-aos="fade-down-left">
                     <div className="project section shadow-lg p-3 mb-5 bg-body rounded">
                         <h5 className="heading">Extra-Curricular Activities</h5>
                         <p><FontAwesomeIcon icon={faChevronCircleRight} /> Assembling of PCs</p>
